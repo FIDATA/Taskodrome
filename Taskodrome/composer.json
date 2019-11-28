@@ -1,0 +1,17 @@
+{
+    "name": "fidata/taskodrome",
+    "description": "Interactive scrum board for Mantis bugtracker",
+    "type": "mantisbt-plugin",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Maxim Kuzmin",
+            "email": "maxriderg@gmail.com"
+        }
+    ],
+    "archive": {
+        "exclude": [
+            ".gitignore"
+        ]
+    }
+}

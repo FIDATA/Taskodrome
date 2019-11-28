@@ -34,3 +34,12 @@ Temperature of issue has no analogue in mantisbt. It allows you to simply differ
 ![tempr](Screenshots/temperature.gif)
 
 Designed by svalion https://www.behance.net/svalion
+
+## Creating Composer package
+
+```
+cd Taskodrome
+mkdir build
+composer archive --format=zip --dir=build --file=Taskodrome-0.1.0
+curl -u%ARTIFACTORY_USERNAME%:%ARTIFACTORY_PASSWORD% "https://fidata.jfrog.io/fidata/composer-local/fidata/Taskodrome-0.1.0.zip;composer.version=0.1.0" -T build/Taskodrome-0.1.0.zip
+```
